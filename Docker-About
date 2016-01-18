@@ -1,1 +1,33 @@
+https://training.docker.com/self-paced-training
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started
+
+
 # Docker
+Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
+
+Main Docker Parts
+
+docker daemon: used to manage docker (LXC) containers on the host it runs
+docker CLI: used to command and communicate with the docker daemon
+docker image index: a repository (public or private) for docker images
+
+Main Docker Elements
+
+docker containers: directories containing everything-your-application
+docker images: snapshots of containers or base OS (e.g. Ubuntu) images
+Dockerfiles: scripts automating the building process of images
+
+As more layers (tools, applications etc.) are added on top of the base, new images can be formed by committing these changes. When a new container gets created from a saved (i.e. committed) image, things continue from where they left off. And the union file system, brings all the layers together as a single entity when you work with a container.
+
+Unionfs is a filesystem service for Linux, FreeBSD and NetBSD which implements a union mount for other file systems. It allows files and directories of separate file systems, known as branches, to be transparently overlaid, forming a single coherent file system. Contents of directories which have the same path within the merged branches will be seen together in a single merged directory, within the new, virtual filesystem.
+
+Dockerfiles
+
+Dockerfiles are scripts containing a successive series of instructions, directions, and commands which are to be executed to form a new docker image. Each command executed translates to a new layer of the onion, forming the end product. They basically replace the process of doing everything manually and repeatedly. When a Dockerfile is finished executing, you end up having formed an image, which then you use to start (i.e. create) a new container.
+
+
+
+
+
+
+
