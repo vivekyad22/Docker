@@ -25,7 +25,7 @@ Dockerfiles
 
 Dockerfiles are scripts containing a successive series of instructions, directions, and commands which are to be executed to form a new docker image. Each command executed translates to a new layer of the onion, forming the end product. They basically replace the process of doing everything manually and repeatedly. When a Dockerfile is finished executing, you end up having formed an image, which then you use to start (i.e. create) a new container.
 
-
+Every commit creates a new image and there would be layers of images like onion.
 
 
 
