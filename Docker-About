@@ -27,6 +27,32 @@ Dockerfiles are scripts containing a successive series of instructions, directio
 
 Every commit creates a new image and there would be layers of images like onion.
 
+docker build
+docker run 
+docker stop
+
+DOckerfile
+FROM
+RUN
+CMD
+ENTRYPOINT
+
+Mapping volumes
+VOLUME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
